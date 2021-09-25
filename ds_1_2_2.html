@@ -1,0 +1,93 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>apu</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: #43dde6;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        span {
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border-radius: 50px;
+            border-radius: 50%;
+            background: #fbff0a;
+            box-shadow:  50px 50px 100px #646604,
+                         -50px -50px 100px #ffff10;
+        }
+
+        span:nth-child(1) {
+            animation: fly 8s 3.75s ease-in-out infinite;
+        }
+        span:nth-child(2) {
+            animation: fly 12s 1.75s ease-in-out infinite;
+        }
+        span:nth-child(3) {
+            animation: fly 18s .75s ease-in-out infinite;
+        }
+        span:nth-child(4) {
+            animation: fly 11s 7.75s ease-in-out infinite;
+        }
+        span:nth-child(5) {
+            animation: fly 7s 2.25s ease-in-out infinite;
+        }
+        span:nth-child(6) {
+            animation: fly 5s 4.75s ease-in-out infinite;
+        }
+        @keyframes fly {
+            0% {
+                left: -25px;
+                top: 50%;
+            }
+            25% {
+                top: 40%;
+            }
+            50% {
+                top: 55%;
+            }
+            75% {
+                top: 35%;
+            }
+            100% {
+                left: 100%;
+                top: 50%;
+            }
+        }
+        div {
+            background: rgba(255, 255, 255, 0.17);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5.3px);
+            -webkit-backdrop-filter: blur(5.3px);
+            border: 1px solid rgba(255, 255, 255, 0.26);
+            display: flex;
+            height: 200px;
+            width: 300px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: all ease .25s;
+        }
+    </style>
+</head>
+
+<body cz-shortcut-listen="true">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<div>Загрузка ...</div>
+
+
+</body></html>
